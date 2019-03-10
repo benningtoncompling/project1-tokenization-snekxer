@@ -39,18 +39,26 @@ Depending on how you organize your code, you may have more files than this.
 import sys
 import regex
 
-file = open("Wikipedia-LexicalAnalysis.xml", "r", encoding="utf-8").read()
+inputf = sys.argv[1]
+outputf = sys.argv[2]
+
+file = open(inputf, "r", encoding="utf-8").read()
 print(file)
 
-#remove XML tags
+# remove XML tags
 file = regex.sub(r"<.+?>|\&lt\;.+?\&gt\;", "", file, flag="UNICODE")
 file = file.casefold()
-newfile = open("lexical_analysis_out.txt", "w+",  encoding="utf-8").write(file)
 
-#gets words (after cleanup)
+# gets words (after cleanup)
 file = regex.findall(r"\b(?:[a-zA-Z]+[\.\']?[a-zA-Z]?)+\b", file, flag="UNICODE")
 
-file.sort()
+# makes dictionary out of words
+words = {i: file.count(i) for i in file}
 
-print(file)
-#newfile = open("lexical_analysis_out.txt", "w+",  encoding="utf-8").write(file)
+wordKey = sorted(words.keys())
+ordered = sorted(wordKey, key=lambda x: words[x], reverse=True)
+
+with open(outputf,"w") as output:
+    for word in ordered:
+        output.write(str(word) + '" ' + str(words[word]) + '\n ')
+    output.close()
