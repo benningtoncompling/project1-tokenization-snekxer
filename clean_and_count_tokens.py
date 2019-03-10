@@ -39,8 +39,11 @@ Depending on how you organize your code, you may have more files than this.
 import sys
 import regex
 
-inputf = sys.argv[1]
-outputf = sys.argv[2]
+#inputf = sys.argv[1]
+#outputf = sys.argv[2]
+
+inputf = "Wikipedia-LexicalAnalysis.xml"
+outputf = "lexical_analysis_out.txt"
 
 file = open(inputf, "r", encoding="utf-8").read()
 print(file)
@@ -60,5 +63,5 @@ ordered = sorted(wordKey, key=lambda x: words[x], reverse=True)
 
 with open(outputf,"w") as output:
     for word in ordered:
-        output.write(str(word) + '" ' + str(words[word]) + '\n ')
+        output.write(str(word) + ': ' + str(words[word]) + '\n ')
     output.close()
