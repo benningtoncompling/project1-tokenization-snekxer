@@ -25,11 +25,11 @@ from nltk import *
 import sys
 import regex
 
-#inputf = sys.argv[1]
-#outputf = sys.argv[2]
+inputf = sys.argv[1]
+outputf = sys.argv[2]
 
-inputf = "Wikipedia-LexicalAnalysis.xml"
-outputf = "lexical_analysis_nltk_stemmed_out.txt"
+#inputf = "Wikipedia-LexicalAnalysis.xml"
+#outputf = "lexical_analysis_nltk_stemmed_out.txt"
 
 file = open(inputf, "r", encoding="utf-8").read()
 

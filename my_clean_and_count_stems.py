@@ -22,11 +22,11 @@ Depending on how you organize your code, you may have more files than this.
 import sys
 import regex
 
-#inputf = sys.argv[1]
-#outputf = sys.argv[2]
+inputf = sys.argv[1]
+outputf = sys.argv[2]
 
-inputf = "Wikipedia-LexicalAnalysis.xml"
-outputf = "lexical_analysis_stemmed_out.txt"
+#inputf = "Wikipedia-LexicalAnalysis.xml"
+#outputf = "lexical_analysis_stemmed_out.txt"
 
 file = open(inputf, "r", encoding="utf-8").read()
 
@@ -131,9 +131,8 @@ def step5(word):
     # step 5a
     if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){2,}[aeiou]*e$", word, regex.MULTILINE):
         word = regex.sub(r"e$", "", word, regex.MULTILINE)
-# @@@FIX ME@@@
-    #if regex.search(r"[^(?:\w+[^aeiou][aeiou][^aeiou])]e$", word, regex.MULTILINE):
-    #    word = regex.sub(r"e$", "", word, regex.MULTILINE)
+    if regex.search(r"\w+(?<![^aeiou][aeiou][^aeiou])e$", word, regex.MULTILINE):
+        word = regex.sub(r"e$", "", word, regex.MULTILINE)
 
     # step 5b
     if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){2,}[aeiou]*[^aeiou][^aeiou][a-z]$", word, regex.MULTILINE):

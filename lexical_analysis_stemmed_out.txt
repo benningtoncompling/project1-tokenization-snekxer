@@ -8,13 +8,15 @@ token: 101
  for: 48
  or: 47
  languag: 46
- are: 43
+ ar: 43
  charact: 42
  lexic: 41
  a: 34
  with: 29
  that: 28
+ us: 27
  string: 26
+ on: 25
  code: 24
  lexem: 24
  mai: 24
@@ -39,19 +41,16 @@ token: 101
  rule: 16
  talk: 16
  into: 15
- on: 15
  these: 15
  analyz: 14
  grammar: 14
  sequenc: 14
- us: 14
  express: 13
  follow: 13
  liter: 13
  not: 13
  structur: 13
  term: 13
- use: 13
  but: 12
  evalu: 12
  indent: 12
@@ -70,7 +69,6 @@ token: 101
  categori: 10
  flex: 10
  includ: 10
- one: 10
  statement: 10
  also: 9
  data: 9
@@ -82,7 +80,7 @@ token: 101
  softwar: 9
  stream: 9
  syntax: 9
- value: 9
+ valu: 9
  written: 9
  case: 8
  cite: 8
@@ -94,10 +92,10 @@ token: 101
  process: 8
  produc: 8
  python: 8
- science: 8
+ scienc: 8
  semant: 8
  than: 8
- title: 8
+ titl: 8
  web: 8
  ani: 7
  bas: 7
@@ -114,10 +112,10 @@ token: 101
  phrase: 7
  result: 7
  scanner: 7
- simple: 7
+ simpl: 7
  specif: 7
  state: 7
- table: 7
+ tabl: 7
  thei: 7
  though: 7
  thu: 7
@@ -125,6 +123,8 @@ token: 101
  what: 7
  amp: 6
  categor: 6
+ handl: 6
+ match: 6
  mean: 6
  off: 6
  other: 6
@@ -135,9 +135,9 @@ token: 101
  sometim: 6
  space: 6
  text: 6
+ b: 5
  back: 5
  bash: 5
- be: 5
  between: 5
  book: 5
  clas: 5
@@ -149,7 +149,6 @@ token: 101
  featur: 5
  list: 5
  mani: 5
- match: 5
  might: 5
  number: 5
  onli: 5
@@ -157,7 +156,7 @@ token: 101
  possibl: 5
  segment: 5
  set: 5
- source: 5
+ sourc: 5
  stack: 5
  stage: 5
  termin: 5
@@ -214,7 +213,7 @@ token: 101
  automat: 3
  brown: 3
  call: 3
- change: 3
+ chang: 3
  chines: 3
  cod: 3
  combin: 3
@@ -225,8 +224,8 @@ token: 101
  definit: 3
  differ: 3
  directl: 3
+ do: 3
  document: 3
- doe: 3
  dog: 3
  driven: 3
  enough: 3
@@ -236,8 +235,6 @@ token: 101
  full: 3
  further: 3
  group: 3
- handl: 3
- handle: 3
  have: 3
  hold: 3
  implement: 3
@@ -252,7 +249,7 @@ token: 101
  mainli: 3
  mediawiki: 3
  modul: 3
- ne: 3
+ n: 3
  noth: 3
  option: 3
  output: 3
@@ -261,6 +258,7 @@ token: 101
  perldoc.perl.org: 3
  publish: 3
  quick: 3
+ quot: 3
  recogn: 3
  refer: 3
  remov: 3
@@ -339,7 +337,7 @@ token: 101
  hyphen: 2
  instead: 2
  integ: 2
- issue: 2
+ issu: 2
  januari: 2
  keyword: 2
  known: 2
@@ -375,7 +373,6 @@ token: 101
  product: 2
  provid: 2
  question: 2
- quot: 2
  read: 2
  reconstruct: 2
  report: 2
@@ -467,7 +464,7 @@ token: 101
  chan: 1
  check: 1
  chei: 1
- choose: 1
+ choos: 1
  classif: 1
  classifi: 1
  clean: 1
@@ -524,7 +521,7 @@ token: 101
  earli: 1
  easier: 1
  ed: 1
- edge: 1
+ edg: 1
  edition: 1
  effect: 1
  element: 1
@@ -548,17 +545,17 @@ token: 101
  explicit: 1
  explicitl: 1
  extern: 1
+ f: 1
  fairli: 1
  famili: 1
  farm: 1
  farrell: 1
- fe: 1
  februari: 1
  field: 1
  find: 1
  fitt: 1
  flexibl: 1
- floate: 1
+ float: 1
  forth: 1
  forum: 1
  freemium: 1
@@ -567,7 +564,7 @@ token: 101
  general: 1
  genivia: 1
  get: 1
- goe: 1
+ go: 1
  goto: 1
  greek: 1
  groups.google.com: 1
@@ -590,7 +587,7 @@ token: 101
  inc: 1
  incorpor: 1
  increas: 1
- indee: 1
+ inde: 1
  index: 1
  index.html: 1
  individu: 1
@@ -628,7 +625,6 @@ token: 101
  mandatori: 1
  mar: 1
  markup: 1
- matche: 1
  matrix: 1
  maxim: 1
  meant: 1
@@ -643,7 +639,7 @@ token: 101
  morphem: 1
  munch: 1
  music: 1
- naive: 1
+ naiv: 1
  ndash: 1
  neg: 1
  new: 1
@@ -670,12 +666,12 @@ token: 101
  pass: 1
  pat: 1
  pearson: 1
- people: 1
+ peopl: 1
  people.cs.nctu.edu.tw: 1
  perlinterp: 1
  perlinterp.html: 1
  permiss: 1
- piece: 1
+ piec: 1
  pike: 1
  plugg: 1
  ply.lex: 1
@@ -701,8 +697,7 @@ token: 101
  queri: 1
  quex: 1
  quex.sourceforge.net: 1
- quite: 1
- quote: 1
+ quit: 1
  ragel: 1
  rather: 1
  raw: 1
@@ -724,7 +719,7 @@ token: 101
  run: 1
  sai: 1
  same: 1
- sample: 1
+ sampl: 1
  save: 1
  scann: 1
  scannerles: 1
@@ -745,14 +740,14 @@ token: 101
  similar: 1
  similarl: 1
  simon: 1
- since: 1
- single: 1
+ sinc: 1
+ singl: 1
  small: 1
  speaker: 1
  specifi: 1
  speech: 1
  split: 1
- stable: 1
+ stabl: 1
  start: 1
  statist: 1
  store: 1
