@@ -46,7 +46,6 @@ inputf = "Wikipedia-LexicalAnalysis.xml"
 outputf = "lexical_analysis_out.txt"
 
 file = open(inputf, "r", encoding="utf-8").read()
-print(file)
 
 # remove XML tags
 file = regex.sub(r"<.+?>|\&lt\;.+?\&gt\;", "", file, flag="UNICODE")
@@ -58,8 +57,8 @@ file = regex.findall(r"\b(?:[a-zA-Z]+[\.\']?[a-zA-Z]?)+\b", file, flag="UNICODE"
 # makes dictionary out of words
 words = {i: file.count(i) for i in file}
 
-wordKey = sorted(words.keys())
-ordered = sorted(wordKey, key=lambda x: words[x], reverse=True)
+# sorts dictionary
+ordered = sorted(sorted(words.keys()), key=lambda x: words[x], reverse=True)
 
 with open(outputf,"w") as output:
     for word in ordered:
