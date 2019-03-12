@@ -35,6 +35,7 @@ Your submission should include the following 2 files:
 
 Depending on how you organize your code, you may have more files than this.
 """
+# I worked with Will (William Bowers) for a lot of the logic
 
 import sys
 import regex

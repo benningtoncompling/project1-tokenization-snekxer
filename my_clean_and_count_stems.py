@@ -19,6 +19,9 @@ Your full submission should include:
 
 Depending on how you organize your code, you may have more files than this.
 """
+
+# I worked with Will (William Bowers) for a lot of the logic
+
 import sys
 import regex
 
@@ -120,7 +123,7 @@ def step3(word):
 
 
 def step4(word):
-    if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){2,}[aeiou]*(al|ance|ence|er|ic|able|ible|ant|ement|[^e]ment|[^m]ent|ou|ism|ate|iti|ous|ive|ize)$", word, regex.MULTILINE):
+    if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){1,}[aeiou]*(al|ance|ence|er|ic|able|ible|ant|ement|[^e]ment|[^m]ent|ou|ism|ate|iti|ous|ive|ize)$", word, regex.MULTILINE):
         word = regex.sub(r"(al|ance|ence|er|ic|able|ible|ant|ement|[^e]ment|[^m]ent|ou|ism|ate|iti|ous|ive|ize)$", "", word, regex.MULTILINE)
     if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){2,}[aeiou]*[st]ion$", word, regex.MULTILINE):
         word = regex.sub(r"ion$", "", word, regex.MULTILINE)
@@ -129,13 +132,13 @@ def step4(word):
 
 def step5(word):
     # step 5a
-    if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){2,}[aeiou]*e$", word, regex.MULTILINE):
+    if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){1,}[aeiou]*e$", word, regex.MULTILINE):
         word = regex.sub(r"e$", "", word, regex.MULTILINE)
     if regex.search(r"\w+(?<![^aeiou][aeiou][^aeiou])e$", word, regex.MULTILINE):
         word = regex.sub(r"e$", "", word, regex.MULTILINE)
 
     # step 5b
-    if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){2,}[aeiou]*[^aeiou][^aeiou][a-z]$", word, regex.MULTILINE):
+    if regex.search(r"[^aeiou\W]*(?:[aeiou]+[^aeiou\W]+){1,}[aeiou]*[^aeiou][^aeiou][a-z]$", word, regex.MULTILINE):
         word = regex.sub(r"\w$", "", word, regex.MULTILINE)
     return word
 

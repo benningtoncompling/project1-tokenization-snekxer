@@ -21,6 +21,8 @@ Your submission should include:
 Depending on how you organize your code, you may have more files than this.
 """
 
+# I worked with Will (William Bowers) for a lot of the logic
+
 from nltk import *
 import sys
 import regex
